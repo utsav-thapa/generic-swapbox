@@ -34,5 +34,4 @@ public class Program {
     public static <T> void itemMatch(SwapBox<T> item) {
         System.out.println("Do these " + item.getLeftItem().getClass().getSimpleName() + " match? \n" + item.itemsMatch());
     }
-
 }
