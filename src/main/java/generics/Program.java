@@ -26,6 +26,9 @@ public class Program {
         displayBox("", prices);
         itemMatch(prices);
 
+
+        words.contains("Hello");
+
     }
     public static <T> void displayBox(String label, SwapBox<T> box) {
         System.out.println(label + " " + box.describe());
@@ -34,4 +37,9 @@ public class Program {
     public static <T> void itemMatch(SwapBox<T> item) {
         System.out.println("Do these " + item.getLeftItem().getClass().getSimpleName() + " match? \n" + item.itemsMatch());
     }
+
+//    public static <T> void itemContains(<T> a , SwapBox<T> box) {
+//        System.out.println("Is " + a.getClass().getSimpleName() + " in " +  box.getLeftItem().getClass() +"? \n" + box.contains(a));
+//    }
+
 }

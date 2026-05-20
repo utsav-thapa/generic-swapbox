@@ -18,7 +18,7 @@ public class SwapBox<T> {
     }
 
     public void setLeftItem(T leftItem){
-       this.leftItem = leftItem;
+        this.leftItem = leftItem;
     }
 
     public void setRightItem(T rightItem) {
@@ -40,6 +40,11 @@ public class SwapBox<T> {
     public boolean itemsMatch() {
         return (this.leftItem == this.rightItem);
     }
+
+    public boolean contains(T item) {
+        return this.leftItem.equals(item) || this.rightItem.equals(item);
+    }
+
 
 
 }
