@@ -1,10 +1,10 @@
 package generics;
 
-public class Swapbox<T> {
+public class SwapBox<T> {
     private T leftItem;
     private T rightItem;
 
-    public Swapbox(T leftItem, T rightItem) {
+    public SwapBox(T leftItem, T rightItem) {
         this.leftItem = leftItem;
         this.rightItem = rightItem;
     }
@@ -34,7 +34,12 @@ public class Swapbox<T> {
     }
 
     public String describe() {
-        return "";
+        return "Left: " + this.leftItem + ", Right: " + this.rightItem;
     }
+
+    public boolean itemsMatch() {
+        return (this.leftItem == this.rightItem);
+    }
+
 
 }
